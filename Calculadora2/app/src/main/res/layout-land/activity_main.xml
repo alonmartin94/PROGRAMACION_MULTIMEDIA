@@ -1,0 +1,265 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textview"
+        android:layout_width="580dp"
+        android:layout_height="100dp"
+        android:gravity="center|end"
+        android:text="0"
+        android:textSize="80dp"
+        app:layout_constraintBottom_toTopOf="@+id/numero_9"
+        app:layout_constraintEnd_toStartOf="@+id/operador_borrar"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+
+        android:id="@+id/operador_suma"
+        android:textSize="30dp"
+        android:text="+"
+        android:layout_marginRight="2dp"
+        android:layout_width="144dp"
+        android:layout_height="70dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:backgroundTint="#149650"/>
+
+    <Button
+
+        android:id="@+id/operador_resta"
+        android:textSize="30dp"
+        android:text="-"
+        android:layout_marginRight="2dp"
+        android:layout_width="144dp"
+        android:layout_height="70dp"
+        app:layout_constraintBottom_toTopOf="@+id/operador_suma"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:backgroundTint="#149650"/>
+
+    <Button
+
+        android:id="@+id/operador_multiplicacion"
+        android:textSize="30dp"
+        android:text="X"
+        android:layout_marginRight="2dp"
+        android:layout_width="144dp"
+        android:layout_height="70dp"
+        app:layout_constraintBottom_toTopOf="@+id/operador_resta"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:backgroundTint="#149650"/>
+
+    <Button
+
+        android:id="@+id/operador_division"
+        android:textSize="30dp"
+        android:text="/"
+        android:layout_marginRight="2dp"
+        android:layout_width="144dp"
+        android:layout_height="70dp"
+        app:layout_constraintBottom_toTopOf="@+id/operador_multiplicacion"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:backgroundTint="#149650"/>
+
+    <Button
+
+        android:id="@+id/operador_seno"
+        android:textSize="30dp"
+        android:text="sin"
+        android:layout_width="144dp"
+        android:layout_height="70dp"
+        app:layout_constraintEnd_toStartOf="@+id/operador_suma"
+        app:layout_constraintStart_toEndOf="@+id/operador_igual"
+        app:layout_constraintTop_toBottomOf="@+id/operador_coseno"
+        android:backgroundTint="#149650"/>
+
+    <Button
+
+        android:id="@+id/operador_coseno"
+        android:textSize="30dp"
+        android:text="cos"
+        android:layout_width="144dp"
+        android:layout_height="70dp"
+        app:layout_constraintEnd_toStartOf="@+id/operador_resta"
+        app:layout_constraintStart_toEndOf="@+id/numero_3"
+        app:layout_constraintTop_toBottomOf="@+id/operador_tangente"
+        android:backgroundTint="#149650"/>
+
+    <Button
+
+        android:id="@+id/operador_tangente"
+        android:textSize="30dp"
+        android:text="tan"
+        android:layout_width="144dp"
+        android:layout_height="70dp"
+        app:layout_constraintEnd_toStartOf="@+id/operador_multiplicacion"
+        app:layout_constraintStart_toEndOf="@+id/numero_6"
+        app:layout_constraintTop_toBottomOf="@+id/operador_raiz"
+        android:backgroundTint="#149650"/>
+
+    <Button
+
+        android:id="@+id/operador_raiz"
+        android:textSize="30dp"
+        android:text="raiz"
+        android:layout_width="144dp"
+        android:layout_height="70dp"
+        app:layout_constraintEnd_toStartOf="@+id/operador_division"
+        app:layout_constraintStart_toEndOf="@+id/numero_9"
+        app:layout_constraintTop_toBottomOf="@+id/textview"
+        android:backgroundTint="#149650"/>
+
+    <Button
+
+        android:id="@+id/operador_borrar"
+        android:layout_width="144dp"
+        android:layout_height="100dp"
+        android:layout_marginRight="2dp"
+        android:backgroundTint="#005b1b"
+        android:text="C"
+        android:textSize="30dp"
+        app:layout_constraintBottom_toTopOf="@+id/operador_division"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+
+    <Button
+
+        android:id="@+id/operador_igual"
+        android:textSize="30dp"
+        android:text="="
+        android:layout_marginLeft="2dp"
+        android:layout_width="290dp"
+        android:layout_height="70dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/numero_0"
+        android:backgroundTint="#005b1b"/>
+
+    <Button
+
+        android:id="@+id/numero_0"
+        android:textSize="30dp"
+        android:text="0"
+        android:layout_marginLeft="2dp"
+        android:layout_width="144dp"
+        android:layout_height="70dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:backgroundTint="#40ce8a"/>
+
+
+    <Button
+
+        android:id="@+id/numero_1"
+        android:textSize="30dp"
+        android:text="1"
+        android:layout_marginLeft="2dp"
+        android:layout_width="144dp"
+        android:layout_height="70dp"
+        app:layout_constraintBottom_toTopOf="@+id/numero_0"
+        app:layout_constraintStart_toStartOf="parent"
+        android:backgroundTint="#40ce8a"/>
+
+    <Button
+
+        android:id="@+id/numero_2"
+        android:textSize="30dp"
+        android:text="2"
+        android:layout_marginLeft="2dp"
+        android:layout_width="144dp"
+        android:layout_height="70dp"
+        app:layout_constraintBottom_toTopOf="@+id/numero_0"
+        app:layout_constraintStart_toEndOf="@+id/numero_1"
+        android:backgroundTint="#40ce8a"/>
+
+    <Button
+
+        android:id="@+id/numero_3"
+        android:textSize="30dp"
+        android:text="3"
+        android:layout_marginLeft="2dp"
+        android:layout_width="144dp"
+        android:layout_height="70dp"
+        app:layout_constraintBottom_toBottomOf="@+id/numero_2"
+        app:layout_constraintStart_toEndOf="@+id/numero_2"
+        android:backgroundTint="#40ce8a"/>
+
+    <Button
+
+        android:id="@+id/numero_4"
+        android:textSize="30dp"
+        android:text="4"
+        android:layout_marginLeft="2dp"
+        android:layout_width="144dp"
+        android:layout_height="70dp"
+        app:layout_constraintBottom_toTopOf="@+id/numero_1"
+        app:layout_constraintStart_toStartOf="parent"
+        android:backgroundTint="#40ce8a"/>
+
+    <Button
+
+        android:id="@+id/numero_5"
+        android:textSize="30dp"
+        android:text="5"
+        android:layout_marginLeft="2dp"
+        android:layout_width="144dp"
+        android:layout_height="70dp"
+        app:layout_constraintBottom_toTopOf="@+id/numero_2"
+        app:layout_constraintStart_toEndOf="@+id/numero_4"
+        android:backgroundTint="#40ce8a"/>
+
+    <Button
+
+        android:id="@+id/numero_6"
+        android:textSize="30dp"
+        android:text="6"
+        android:layout_marginLeft="2dp"
+        android:layout_width="144dp"
+        android:layout_height="70dp"
+        app:layout_constraintBottom_toTopOf="@+id/numero_3"
+        app:layout_constraintStart_toEndOf="@+id/numero_5"
+        android:backgroundTint="#40ce8a"/>
+
+    <Button
+
+        android:id="@+id/numero_7"
+        android:textSize="30dp"
+        android:text="7"
+        android:layout_marginLeft="2dp"
+        android:layout_width="144dp"
+        android:layout_height="70dp"
+        app:layout_constraintBottom_toTopOf="@+id/numero_4"
+        app:layout_constraintStart_toStartOf="parent"
+        android:backgroundTint="#40ce8a"/>
+
+    <Button
+
+        android:id="@+id/numero_8"
+        android:textSize="30dp"
+        android:text="8"
+        android:layout_marginLeft="2dp"
+        android:layout_width="144dp"
+        android:layout_height="70dp"
+        app:layout_constraintBottom_toTopOf="@+id/numero_5"
+        app:layout_constraintStart_toEndOf="@+id/numero_7"
+        android:backgroundTint="#40ce8a"/>
+
+    <Button
+
+        android:id="@+id/numero_9"
+        android:textSize="30dp"
+        android:text="9"
+        android:layout_marginLeft="2dp"
+        android:layout_width="144dp"
+        android:layout_height="70dp"
+        app:layout_constraintBottom_toTopOf="@+id/numero_6"
+        app:layout_constraintStart_toEndOf="@+id/numero_8"
+        android:backgroundTint="#40ce8a"/>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
